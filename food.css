@@ -1,0 +1,256 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES */
+:root {
+  --navbar-height: 59px;
+
+}
+
+/* NAVIGATION BAR:LOGO AND IMAGE  */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 6px 30px 8px -10px;
+  display: inline-block;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+
+
+/* A ELEMENT  */
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 2px 33px;
+  color: black;
+
+}
+
+#navbar ul li a:hover {
+  color: rgb(30, 240, 6);
+  /* background-color: rgb(15, 219, 15); */
+  border-radius: 34px;
+  text-decoration: underline;
+
+
+}
+
+/* HOME SECTION */
+#home {
+  height: 448px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 200px;
+}
+
+#home::before {
+  content: "";
+  background: url('../food-images/bg.jpg')no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 566px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+
+}
+
+#home h1 {
+  color: black;
+}
+
+#home h1 p {
+  color: black;
+
+}
+
+/* SERVICES SECTION    */
+
+#services {
+  margin: 34px;
+  display: flex;
+
+}
+
+#services .box {
+  border: 2px solid blue;
+  border-radius: 23px;
+  background-color: #e6f1e7;
+  margin: 3px;
+  padding: 23px;
+
+}
+
+#services .box img {
+  /* border: 2px solid blue; */
+  height: 100px;
+  display: block;
+  margin: auto;
+  /* border-radius: 50%; */
+}
+
+#services .box p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*CLIENT SECTION  */
+#client-section {
+  position: relative
+}
+
+#client-section::before {
+
+  content: "";
+  position: absolute;
+  background: url('../food-images/bg.jpg');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+
+
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-items {
+  padding: 34px;
+}
+
+#clients img {
+  height: 124px;
+}
+
+/* CONTACT DETAILS  */
+#contact {
+  position: relative;
+
+
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url('../food-images/clientbg.jpg');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .3;
+
+}
+
+.contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+.contact-box input,
+.contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+
+}
+.contact-box form{
+  width: 40%;
+}
+.contact-box label{
+  font-size: 1.3rem;
+
+}
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* UTILITY CLASSES  */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(20, 3, 171);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 105px;
+  padding: 6px 2px;
+
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(28, 192, 53);
+  box-shadow: 3px 3px 23px #22c132;
+}
+
+.center {
+  text-align: center;
+}
